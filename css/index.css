@@ -18,7 +18,7 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
+	/* border: 0; */
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -49,6 +49,8 @@ table {
 
 * {
     box-sizing: border-box;
+    /* border: 1px solid red; */
+    max-width: 100%;
 }
 
 html, body {
@@ -61,7 +63,9 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
 }
-
+/* h2 {
+    font-weight: bold;
+} */
 p {
     line-height: 1.4;
 }
@@ -70,7 +74,35 @@ p {
     width: 800px;
     margin: 0 auto;
 }
-
+header {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width:100%;
+    margin: 2% 0 4% 0;
+}
+.logo {
+    width:20%;
+}
+.nav {
+    /* display:flex; */
+    width:80%;
+    margin-top: 3%;
+}
+.nav nav a{
+    /* margin-right: 13%; */
+    font-size: 14px;
+    text-decoration: none;
+    color:black;
+}
+nav {
+    display: flex;
+    width:100%;
+    justify-content: space-around;
+}
+.jumbojpg {
+    margin: 2% 0;
+}
 .top-content {
     display: flex;
     flex-wrap: wrap;
@@ -101,16 +133,107 @@ p {
     justify-content: space-evenly;
 }
 
-.middle-content .boxes .box {
+.middle-content .boxes .box1 {
     width: 12.5%;
     height: 100px;
-    background: black;
+    background: teal;
     margin: 20px 2.5%;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+.middle-content .boxes .box2 {
+    width: 12.5%;
+    height: 100px;
+    background: gold;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.middle-content .boxes .box3 {
+    width: 12.5%;
+    height: 100px;
+    background: cadetblue;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.middle-content .boxes .box4 {
+    width: 12.5%;
+    height: 100px;
+    background: coral;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.middle-content .boxes .box5 {
+    width: 12.5%;
+    height: 100px;
+    background: crimson;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.middle-content .boxes .box6 {
+    width: 12.5%;
+    height: 100px;
+    background: forestgreen;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.middle-content .boxes .box7 {
+    width: 12.5%;
+    height: 100px;
+    background: darkorchid;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.middle-content .boxes .box8 {
+    width: 12.5%;
+    height: 100px;
+    background: hotpink;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.middle-content .boxes .box9 {
+    width: 12.5%;
+    height: 100px;
+    background: indigo;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.middle-content .boxes .box10 {
+    width: 12.5%;
+    height: 100px;
+    background: dodgerblue;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 
 .bottom-content {
     display: flex;
@@ -143,4 +266,81 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+
+/* About style section */
+header {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width:100%;
+    margin: 2% 0 4% 0;
+}
+.logo {
+    width:20%;
+}
+.nav {
+    display:flex;
+    width:80%;
+    margin-top: 3%;
+}
+.nav nav a{
+    /* margin-right: 13%; */
+    font-size: 14px;
+    text-decoration: none;
+    color: black;
+}
+nav {
+    display: flex;
+    width:100%;
+    justify-content: space-around;
+}
+.jumboabout {
+    margin: 2% 0;
+}
+.top {
+    /* margin-bottom: 20px; */
+    border-bottom: 1px dashed black;
+}
+
+.top .about-page {
+    width: 96%;
+    /* padding: 0 1%; */
+    padding-bottom: 20px;  
+}
+.middleabout {
+    width:100%
+}
+.contentinfo {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+}
+.contentinfo div {
+    width:47%;
+    margin:3% 1%;
+    border-bottom: 1px dashed black;
+}
+.information button {
+    margin: 3% 0 4% 0;
+    border-radius: 7px;
+    background-color: white;
+    padding:1.5% 3%;
+}
+.information button a {
+    text-decoration: none;
+    color: black;
+}
+.information h3 {
+    margin-top: 2%;
+}
+.bottominfo {
+    display:flex;
+    justify-content: center;
+    width:100%;
+}
+.bottominfo div {
+    width:96%;
+    margin: 2% 0 4% 0;
 }
