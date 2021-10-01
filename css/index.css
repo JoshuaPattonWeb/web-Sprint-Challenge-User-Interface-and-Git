@@ -331,3 +331,12 @@ nav {
 .information h3 {
     margin-top: 2%;
 }
+.bottominfo {
+    display:flex;
+    justify-content: center;
+    width:100%;
+}
+.bottominfo div {
+    width:96%;
+    margin: 2% 0 4% 0;
+}
